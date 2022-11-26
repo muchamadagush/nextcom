@@ -12,9 +12,10 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        <h1 className={`${styles.title} font-bold`}>
           Welcome to Nextcom!
         </h1>
+        <p className='mt-4 font-extralight'>Component repo with nextjs and tailwindcss</p>
       </main>
     </div>
   )
