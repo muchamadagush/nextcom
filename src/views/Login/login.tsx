@@ -40,7 +40,7 @@ const Login = () => {
           <img src='/fav.png' alt='logo' className='w-[64px]' />
           <input type="text" name="username" placeholder='username' autoComplete='false' value={username} onChange={(e) => setUsername(e.target.value)} className='focus:outline-none border-2 rounded-md w-full py-3 px-4 my-2' />
           <input type="password" name="password" placeholder='password' autoComplete='false' value={password} onChange={(e) => setPassword(e.target.value)} className='focus:outline-none border-2 rounded-md w-full py-3 px-4 my-2' />
-          <button type="button" onClick={() => handleLogin()} className='border w-full p-3 mt-6 rounded-lg bg-indigo-600 text-white hover:bg-opacity-80 font-semibold'>Login</button>
+          <button type="button" onClick={() => handleLogin()} disabled={loading} className='border w-full p-3 mt-6 rounded-lg bg-indigo-600 text-white hover:bg-opacity-80 font-semibold disabled:bg-opacity-80'>Login</button>
           <a href="/forgot-password" className='mr-auto mt-1 text-gray-500'>Forgot password?</a>
           <div className="flex w-full gap-2 my-3">
             <hr className='my-auto w-full' />
