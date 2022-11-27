@@ -47,7 +47,7 @@ const Login = () => {
             <span>or</span>
             <hr className='my-auto w-full' />
           </div>
-          <Link href={'/register'} className='border border-indigo-600 w-full p-3 rounded-lg bg-white text-indigo-600 hover:shadow-inner font-semibold'>Register</Link>
+          <Link href={'/register'} className='border border-indigo-600 w-full p-3 rounded-lg bg-white text-indigo-600 hover:shadow-inner font-semibold text-center'>Register</Link>
         </div>
       </div>
     </>
