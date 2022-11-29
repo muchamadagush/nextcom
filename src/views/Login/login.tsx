@@ -12,7 +12,10 @@ const Login = () => {
   const handleLogin = async () => {
     setLoading(true)
     try {
-      await ApiCall.login({ username, password })
+      const res = await ApiCall.login({ username, password })
+
+      localStorage.setItem('token', res.data.accessToken)
+      localStorage.setItem('username', username)
 
       setLoading(false)
     } catch (error: any) {      
